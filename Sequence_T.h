@@ -1,4 +1,8 @@
 #pragma once
+
+
+typedef void* Sequence_T;
+
 //PRE TRUE
 //POST RETURNS initialized sequence SEQUENCE_T
 Sequence_T Create_Sequence();
