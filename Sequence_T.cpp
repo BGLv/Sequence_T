@@ -1,3 +1,4 @@
+#include "pch.h"
 #include "Sequence_T.h"
 
 #define MaxElements 8
@@ -119,10 +120,12 @@ void Delete_Current(Sequence_T Sequence)
 
 	Seq = (SeqRec_Ptr_T)Sequence;
 	
-	for (int Index = Seq->NumberElements - 1; Index >= Seq->CurrentElement; Index--) {
+	for (int Index = Seq->CurrentElement; Index < Seq->NumberElements-1; Index++)
+	{
 		Seq->Recs[Index] = Seq->Recs[Index + 1];
 	}
 	Seq->NumberElements--;
+	Seq->CurrentElement = 0;
 }
 
 void Free_Sequence(Sequence_T Sequence)

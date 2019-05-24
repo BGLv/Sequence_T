@@ -2,7 +2,7 @@
 // 24/7/98
 // Demo of multi-file programs with a very small string library!
 // Ken Brownsey
-
+#include "pch.h"
 #include <iostream>
 #include <string.h>
 #include "rd_str.h"
@@ -14,6 +14,6 @@ char
 
 	cin >> Buffer;
 	Result = new char[strlen(Buffer) + 1];
-	strcpy(Result, Buffer);
+	strcpy_s(Result, strlen(Buffer) + 1 , Buffer);
 	return(Result);
 }

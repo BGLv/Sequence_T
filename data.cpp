@@ -2,7 +2,7 @@
 // 24/7/98
 // Demo of types
 // Ken Brownsey
-
+#include "pch.h"
 #include "my_const.h"
 #include "iostream"
 #include "rd_str.h"

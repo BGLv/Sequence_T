@@ -1,7 +1,14 @@
 #pragma once
 
+//for use BOOLEAN
+#include "my_const.h"
+
+//for use KAPRec_T
+#include "store.h"
 
 typedef void* Sequence_T;
+
+typedef KAPRec_T Element_T;
 
 //PRE TRUE
 //POST RETURNS initialized sequence SEQUENCE_T

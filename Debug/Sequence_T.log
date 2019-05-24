@@ -1,0 +1,3 @@
+﻿  Sequence_T.cpp
+c:\users\bogdan\source\repos\sequence_t\sequence_t\data.h(7): warning C4091: 'typedef ': ignored on left of 'StudyMode_T' when no variable is declared
+  Sequence_T.vcxproj -> C:\Users\Bogdan\source\repos\Sequence_T\Debug\Sequence_T.exe
